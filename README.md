@@ -1,7 +1,7 @@
 # ログまわりの整理・まとめ
 
 ## はじめに
-![](assets/2024-05-28-08-32-24.png)
+![](https://raw.githubusercontent.com/yKesamaru/how_to_logging/master/assets/2024-05-28-08-32-24.png)
 Ubuntuを日常的に使っていると挙動に不審な点があったり決まったアプリケーションが落ちてしまうなどの機会に遭遇します。
 そういった時にログを簡単に確認できればいいのですが、ちょっとしたことに時間を取られたくなかったり、そもそもログを確認することが生産性と直結しないなど、なかなかログを確認して対策する習慣がつかないのではないでしょうか？
 
@@ -18,7 +18,7 @@ Ubuntuを日常的に使っていると挙動に不審な点があったり決�
 
 この記事が基本的なログの確認方法について理解を深める一助になればと思います。
 
-![](assets/eye-catch.png)
+![](https://raw.githubusercontent.com/yKesamaru/how_to_logging/master/assets/eye-catch.png)
 
 ## 構成
 1. どのようなログの種類があるか
@@ -97,7 +97,7 @@ System:
 
 ## 1. どのようなログの種類があるか
 ※ ログファイルは（ほとんど）すべて`/var/log/`ディレクトリ以下に存在します。
-![](assets/2024-05-31-20-44-21.png)
+![](https://raw.githubusercontent.com/yKesamaru/how_to_logging/master/assets/2024-05-31-20-44-21.png)
 
 | カテゴリ（ファシリティ）        | ログファイル名       | 説明                                                                                          |
 |------------------|------------------|---------------------------------------------------------------------------------------------|
@@ -354,8 +354,8 @@ journalctl [オプション...] [マッチ...]
 ### **GNOME Logs**
 - システムログを簡単に表示およびフィルタリング可能。
 - インストール: `sudo snap install gnome-logs`
-![](assets/2024-05-28-09-11-37.png)
-![](assets/2024-05-28-09-59-55.png)
+![](https://raw.githubusercontent.com/yKesamaru/how_to_logging/master/assets/2024-05-28-09-11-37.png)
+![](https://raw.githubusercontent.com/yKesamaru/how_to_logging/master/assets/2024-05-28-09-59-55.png)
 Ubuntu標準のログ確認ツールです。
 #### 特長
 - GNOMEデスクトップ環境に統合されており、使いやすいUI
@@ -369,9 +369,9 @@ Ubuntu標準のログ確認ツールです。
 
 ### **KSystemLog**
 - インストール: `sudo apt install ksystemlog`
-![](assets/2024-05-28-09-14-33.png)
-![](assets/2024-05-28-09-23-25.png)
-![](assets/2024-05-28-09-24-29.png)
+![](https://raw.githubusercontent.com/yKesamaru/how_to_logging/master/assets/2024-05-28-09-14-33.png)
+![](https://raw.githubusercontent.com/yKesamaru/how_to_logging/master/assets/2024-05-28-09-23-25.png)
+![](https://raw.githubusercontent.com/yKesamaru/how_to_logging/master/assets/2024-05-28-09-24-29.png)
 #### 特長
 - ファシリティのフィルタリングや検索
 - ビュー設定をカスタマイズ可能
@@ -390,7 +390,7 @@ Ubuntu標準のログ確認ツールです。
 ### **Lnav (Log File Navigator)**
 - 複数のログファイルを単一のインターフェースで表示、エラーや警告を自動的にハイライト。
 - インストール: `sudo apt install lnav`
-![](assets/2024-05-28-09-26-58.png)
+![](https://raw.githubusercontent.com/yKesamaru/how_to_logging/master/assets/2024-05-28-09-26-58.png)
 参考：
 - [Features: official](https://lnav.org/features)
 - [コンソール上でログをカラフルに見やすく表示してくれるログビューアコマンド『lnav』](https://orebibou.com/ja/home/201503/20150310_001/)
@@ -411,7 +411,7 @@ Ubuntu標準のログ確認ツールです。
 参考：
 - [MultiTailで効率的にログを見る](https://qiita.com/Brutus/items/3e6425c84142902da376)
 - [MultiTail: See two, three and more logs in real time at the same time](https://blog.desdelinux.net/en/multitail-sees-two-three-and-more-logs-in-real-time-at-the-same-time/)
-![](assets/2024-05-28-09-49-03.png)
+![](https://raw.githubusercontent.com/yKesamaru/how_to_logging/master/assets/2024-05-28-09-49-03.png)
 #### 特長
 - 複数のログファイルを同時に表示し、リアルタイムで監視可能
 - 若干のカラーリング
@@ -422,7 +422,7 @@ Ubuntu標準のログ確認ツールです。
 
 ### **Logwatch**
 - インストール: `sudo apt install logwatch`
-![](assets/2024-05-28-12-52-06.png)
+![](https://raw.githubusercontent.com/yKesamaru/how_to_logging/master/assets/2024-05-28-12-52-06.png)
 - 診断メールを送ってくれる
 - 設定ができなかったため省略
 
@@ -431,7 +431,7 @@ Ubuntu標準のログ確認ツールです。
 
 ### **Glogg**
 - インストール: `sudo apt install glogg`
-![](assets/2024-05-28-13-26-03.png)
+![](https://raw.githubusercontent.com/yKesamaru/how_to_logging/master/assets/2024-05-28-13-26-03.png)
 #### 特長
 - 自分が注目するログファイルを手動でオープンするタイプ
 - タブ追加ができる
